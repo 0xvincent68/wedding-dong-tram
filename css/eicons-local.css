@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'eicons';
+  src: url('../fonts/eicons.woff2') format('woff2'),
+       url('../fonts/eicons.woff') format('woff'),
+       url('../fonts/eicons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
