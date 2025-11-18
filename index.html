@@ -9,7 +9,6 @@
         }
     </style>
     <meta name="robots" content="noindex, nofollow" />
-    <!-- This site is optimized with the Yoast SEO plugin v19.11 - https://yoast.com/wordpress/plugins/seo/ -->
     <title>ELOISE THEME</title>
     <meta name="description" content="Floral &amp; artistic design" />
     <meta property="og:locale" content="en_US" />
@@ -19,14 +18,16 @@
     <meta property="og:url" content="https://tibra-invitation.id/eloise/" />
     <meta property="og:site_name" content="Tibra Invitation" />
     <meta property="article:modified_time" content="2025-01-03T02:51:25+00:00" />
-    <meta property="og:image" content="https://res.cloudinary.com/dqv5emuao/image/upload/v1762973317/fce9c9ab1525fdde7904235015f54648bbb340e3-ezgif.com-jpg-to-webp-converter_tyonjg.webp" />
+    <meta property="og:image"
+        content="https://res.cloudinary.com/dqv5emuao/image/upload/v1762973317/fce9c9ab1525fdde7904235015f54648bbb340e3-ezgif.com-jpg-to-webp-converter_tyonjg.webp" />
     <meta property="og:image:width" content="1333" />
     <meta property="og:image:height" content="2000" />
     <meta property="og:image:type" content="image/webp" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="ELOISE THEME" />
     <meta name="twitter:description" content="Floral &amp; artistic design" />
-    <meta name="twitter:image" content="https://res.cloudinary.com/dqv5emuao/image/upload/v1762973317/fce9c9ab1525fdde7904235015f54648bbb340e3-ezgif.com-jpg-to-webp-converter_tyonjg.webp" />
+    <meta name="twitter:image"
+        content="https://res.cloudinary.com/dqv5emuao/image/upload/v1762973317/fce9c9ab1525fdde7904235015f54648bbb340e3-ezgif.com-jpg-to-webp-converter_tyonjg.webp" />
     <meta name="twitter:label1" content="Est. reading time" />
     <meta name="twitter:data1" content="3 minutes" />
     <script type="application/ld+json" class="yoast-schema-graph">
@@ -111,6 +112,7 @@
     </script>
     <!-- / Yoast SEO plugin. -->
     <link rel="dns-prefetch" href="//s.w.org" />
+     <link rel="stylesheet" href="css/main.css">
     <script>
         window._wpemojiSettings = {
             baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
@@ -576,7 +578,7 @@
     <link rel="stylesheet" id="elementor-icons-css"
         href="https://tibra-invitation.id/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.15.0"
         media="all" />
-    <link rel="stylesheet" href="css/eicons-local.css">    
+    <link rel="stylesheet" href="css/eicons-local.css">
     <link rel="stylesheet" id="powerpack-frontend-css"
         href="https://tibra-invitation.id/wp-content/plugins/powerpack-elements/assets/css/min/frontend.min.css?ver=2.7.9"
         media="all" />
@@ -599,7 +601,9 @@
     <!-- <link rel="stylesheet" id="font-awesome-4-shim-css"
         href="https://tibra-invitation.id/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.6.5"
         media="all" /> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" id="elementor-post-50658-css"
         href="https://tibra-invitation.id/wp-content/uploads/elementor/css/post-50658.css?ver=1739439643" media="all" />
     <link rel="stylesheet" id="hello-elementor-child-style-css"
@@ -734,35 +738,36 @@
         }
     </style>
     <style>
-      /* Khóa scroll toàn trang */
-      body.no-scroll {
-        overflow: hidden;
-        height: 100vh;
-        position: fixed;
-        width: 100%;
-      }
+        /* Khóa scroll toàn trang */
+        body.no-scroll {
+            overflow: hidden;
+            height: 100vh;
+            position: fixed;
+            width: 100%;
+        }
 
-      /* Đảm bảo phần cover full màn hình */
-      #cvr {
-        position: fixed !important;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 9999;
-        overflow: hidden;
-      }
+        /* Đảm bảo phần cover full màn hình */
+        #cvr {
+            position: fixed !important;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9999;
+            overflow: hidden;
+        }
 
-      /* Nội dung chính chỉ hiện sau khi mở */
-      #main-content {
-        opacity: 0;
-        transition: opacity 0.8s ease;
-        pointer-events: none;
-      }
-      #main-content.unlocked {
-        opacity: 1;
-        pointer-events: auto;
-      }
+        /* Nội dung chính chỉ hiện sau khi mở */
+        #main-content {
+            opacity: 0;
+            transition: opacity 0.8s ease;
+            pointer-events: none;
+        }
+
+        #main-content.unlocked {
+            opacity: 1;
+            pointer-events: auto;
+        }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 </head>
@@ -986,7 +991,8 @@
                                             data-widget_type="button.default">
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-button-wrapper">
-                                                    <a id="btn_op" href="#main-content" class="elementor-button elementor-size-sm elementor-animation-grow"
+                                                    <a id="btn_op" href="#main-content"
+                                                        class="elementor-button elementor-size-sm elementor-animation-grow"
                                                         role="button">
                                                         <span class="elementor-button-content-wrapper">
                                                             <span class="elementor-button-text">Open Invitation</span>
@@ -1168,11 +1174,11 @@
                                                             data-widget_type="image.default">
                                                             <div class="elementor-widget-container">
                                                                 <img width="682" height="703"
-                                                                    src="https://tibra-invitation.id/wp-content/uploads/2024/01/BG-new-pillar-3.png"
+                                                                    src="https://res.cloudinary.com/dqv5emuao/image/upload/v1763434864/b8348624efaca0f5a800e81c7964bfa9d7fe8cfb-ezgif.com-png-to-webp-converter_zi8vwk.webp"
                                                                     class="attachment-large size-large" alt=""
                                                                     loading="lazy" srcset="
-                                      https://tibra-invitation.id/wp-content/uploads/2024/01/BG-new-pillar-3.png         682w,
-                                      https://tibra-invitation.id/wp-content/uploads/2024/01/BG-new-pillar-3-291x300.png 291w
+                                      https://res.cloudinary.com/dqv5emuao/image/upload/v1763434864/b8348624efaca0f5a800e81c7964bfa9d7fe8cfb-ezgif.com-png-to-webp-converter_zi8vwk.webp         682w,
+                                      https://res.cloudinary.com/dqv5emuao/image/upload/v1763434864/b8348624efaca0f5a800e81c7964bfa9d7fe8cfb-ezgif.com-png-to-webp-converter_zi8vwk.webp 291w
                                     " sizes="(max-width: 682px) 100vw, 682px" />
                                                             </div>
                                                         </div>
@@ -1202,10 +1208,9 @@
                                                             data-widget_type="text-editor.default">
                                                             <div class="elementor-widget-container">
                                                                 <p>
-                                                                    &#8220;No one has ever seen God; but if we
-                                                                    love one another, God lives in us and his
-                                                                    love is made complete in us.&#8221;
-                                                                    <strong> <br />( 1 John 4:12) </strong>
+                                                                    &#8220;I can’t promise a perfect life, but I can
+                                                                    promise a faithful heart and a love that grows with
+                                                                    every sunrise.&#8221;
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1293,7 +1298,7 @@
                                                                         <span class="elementor-button-content-wrapper">
                                                                             <span
                                                                                 class="elementor-button-icon elementor-align-icon-left">
-                                                                                 <i class="fas fa-calendar-alt"></i>
+                                                                                <i class="fas fa-calendar-alt"></i>
                                                                             </span>
                                                                             <span class="elementor-button-text">ADD TO
                                                                                 CALENDER</span>
@@ -1347,10 +1352,10 @@
                                                             data-widget_type="text-editor.default">
                                                             <div class="elementor-widget-container">
                                                                 <div class="couple-head">
-                                                                    <p class="couple-description aos-init aos-animate"
+                                                                    <p class="couple-description aos-init aos-animate element-text"
                                                                         data-aos="fade-up" data-aos-duration="1000">
-                                                                        The pleasure of your company is requested
-                                                                        at the marriage of
+                                                                        7 năm tình yêu nảy nở, và ngày hôm nay đã thành
+                                                                        trái ngọt
                                                                     </p>
                                                                 </div>
                                                             </div>
@@ -1361,9 +1366,10 @@
                                                             data-widget_type="image.default">
                                                             <div class="elementor-widget-container">
                                                                 <img width="403" height="523"
-                                                                    src="https://res.cloudinary.com/dqv5emuao/image/upload/v1763004913/73d66891ba522bab82b605a83e031a7772c5256e-ezgif.com-jpg-to-webp-converter_yffzrl.webp"
+                                                                    src="https://res.cloudinary.com/dqv5emuao/image/upload/v1763434574/322ad877ce8f2cba6427909dc1c52b22934bd7f8_1_uujh62.png"
                                                                     class="attachment-large size-large" alt=""
-                                                                    loading="lazy" sizes="(max-width: 403px) 100vw, 403px" />
+                                                                    loading="lazy"
+                                                                    sizes="(max-width: 403px) 100vw, 403px" />
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-1f8550b0 animated-slow elementor-invisible elementor-widget elementor-widget-heading"
@@ -1375,15 +1381,6 @@
                                                                     class="elementor-heading-title elementor-size-default">
                                                                     Nguyễn Á Đông
                                                                 </h2>
-                                                            </div>
-                                                        </div>
-                                                        <div class="elementor-element elementor-element-154c0204 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor"
-                                                            data-id="154c0204" data-element_type="widget"
-                                                            data-settings='{"_animation":"fadeInUp"}'
-                                                            data-widget_type="text-editor.default">
-                                                            <div class="elementor-widget-container"
-                                                                style="font-family: 'Alegreya', serif;">
-                                                                <p class="">Con trai của Mẹ Trương Thị Hảo</p>
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-57d445c4 animated-slow elementor-invisible elementor-widget elementor-widget-image"
@@ -1407,9 +1404,10 @@
                                                             data-widget_type="image.default">
                                                             <div class="elementor-widget-container">
                                                                 <img width="403" height="523"
-                                                                    src="https://res.cloudinary.com/dqv5emuao/image/upload/v1763004758/2e1310c37028865d6442420cff55599d44831e0d1-ezgif.com-jpg-to-webp-converter_uqi5hb.webp"
+                                                                    src="https://res.cloudinary.com/dqv5emuao/image/upload/v1763434576/03c223b8e99071e125a32fae727bc46d8795496d_1_qoveaa.png"
                                                                     class="attachment-large size-large" alt=""
-                                                                    loading="lazy" sizes="(max-width: 403px) 100vw, 403px" />
+                                                                    loading="lazy"
+                                                                    sizes="(max-width: 403px) 100vw, 403px" />
                                                             </div>
                                                         </div>
                                                         <div class="elementor-element elementor-element-391864da animated-slow elementor-invisible elementor-widget elementor-widget-heading"
@@ -1421,16 +1419,6 @@
                                                                     class="elementor-heading-title elementor-size-default">
                                                                     Ngọc Trâm
                                                                 </h2>
-                                                            </div>
-                                                        </div>
-                                                        <div class="elementor-element elementor-element-3595b968 animated-slow elementor-invisible elementor-widget elementor-widget-text-editor"
-                                                            data-id="3595b968" data-element_type="widget"
-                                                            data-settings='{"_animation":"fadeInUp"}'
-                                                            data-widget_type="text-editor.default">
-                                                            <div class="elementor-widget-container">
-                                                                <div class="elementor-widget-container" style="font-family: 'Alegreya', serif;">
-                                                                    <p class="">Con gái của Bố Chu Công Chiến và Mẹ Bùi Thị Kim Lan</p>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -1454,7 +1442,8 @@
                                             <div class="elementor-widget-container">
                                                 <img width="1706" height="2560"
                                                     src="https://res.cloudinary.com/dqv5emuao/image/upload/v1762972068/c688091618c6db59e0bbe1f7cc29af367ed4c936-ezgif.com-jpg-to-webp-converter_akblx2.webp"
-                                                    class="attachment-full size-full" alt="" loading="lazy" sizes="(max-width: 1706px) 100vw, 1706px" />
+                                                    class="attachment-full size-full" alt="" loading="lazy"
+                                                    sizes="(max-width: 1706px) 100vw, 1706px" />
                                             </div>
                                         </div>
                                     </div>
@@ -1494,9 +1483,9 @@
                                                             data-widget_type="text-editor.default">
                                                             <div class="elementor-widget-container">
                                                                 <p>
-                                                                    Together with the blessing of God, we
-                                                                    joyfully invite you to share in our
-                                                                    happiness as we unite in marriage on
+                                                                    From this day forward, you will never walk alone. My
+                                                                    heart will be your shelter, and my arms will be your
+                                                                    home.
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -1594,8 +1583,10 @@
                                                                             data-widget_type="text-editor.default">
                                                                             <div class="elementor-widget-container">
                                                                                 <p>
-                                                                                    <strong>Địa điểm tại tầng 2 Nhà hàng Long Vĩ</strong>
-                                                                                    <br />3A, Đào Duy Anh, Kim Liên, Hà Nội
+                                                                                    <strong>Địa điểm tại tầng 2 Nhà hàng
+                                                                                        Long Vĩ</strong>
+                                                                                    <br />3A, Đào Duy Anh, Kim Liên, Hà
+                                                                                    Nội
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -1851,84 +1842,6 @@
                             </div>
                         </section>
                         <section
-                            class="elementor-section elementor-inner-section elementor-element elementor-element-9fa07e9 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                            data-id="9fa07e9" data-element_type="section">
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div data-dce-background-color="#CEB79900"
-                                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3b13c3c"
-                                    data-id="3b13c3c" data-element_type="column"
-                                    data-settings='{"background_background":"classic"}'>
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <section
-                                            class="elementor-section elementor-inner-section elementor-element elementor-element-3a8ec73 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                            data-id="3a8ec73" data-element_type="section">
-                                            <div class="elementor-container elementor-column-gap-default">
-                                                <div data-dce-background-color="#EDE6DA"
-                                                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-eff299d"
-                                                    data-id="eff299d" data-element_type="column"
-                                                    data-settings='{"background_background":"classic"}'>
-                                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                                        <div class="elementor-element elementor-element-3a198bd elementor-widget elementor-widget-heading"
-                                                            data-id="3a198bd" data-element_type="widget"
-                                                            data-widget_type="heading.default">
-                                                            <div class="elementor-widget-container">
-                                                                <h2
-                                                                    class="elementor-heading-title elementor-size-default">
-                                                                    Wedding Gift
-                                                                </h2>
-                                                            </div>
-                                                        </div>
-                                                        <div class="elementor-element elementor-element-1b45559 elementor-widget elementor-widget-text-editor"
-                                                            data-id="1b45559" data-element_type="widget"
-                                                            data-widget_type="text-editor.default">
-                                                            <div class="elementor-widget-container">
-                                                                <p>
-                                                                    Your presence is a present in itself. But if
-                                                                    you do wish to give us something else,
-                                                                    please tap the button down below for further
-                                                                    information:
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div data-dce-background-color="#814A00"
-                                                            class="elementor-element elementor-element-06c44c4 elementor-align-center gift-open elementor-widget elementor-widget-button"
-                                                            data-id="06c44c4" data-element_type="widget"
-                                                            data-widget_type="button.default">
-                                                            <div class="elementor-widget-container">
-                                                                <div class="elementor-button-wrapper">
-                                                                    <a class="elementor-button elementor-size-sm elementor-animation-grow"
-                                                                        role="button">
-                                                                        <span class="elementor-button-content-wrapper">
-                                                                            <span
-                                                                                class="elementor-button-icon elementor-align-icon-left">
-                                                                                <i aria-hidden="true"
-                                                                                    class="fas fa-gift"></i>
-                                                                            </span>
-                                                                            <span class="elementor-button-text">Wedding
-                                                                                Gift</span>
-                                                                        </span>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </section>
-                                        <div class="elementor-element elementor-element-da10758 elementor-widget elementor-widget-spacer"
-                                            data-id="da10758" data-element_type="widget"
-                                            data-widget_type="spacer.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-spacer">
-                                                    <div class="elementor-spacer-inner"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section
                             class="elementor-section elementor-inner-section elementor-element elementor-element-2189bbab elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                             data-id="2189bbab" data-element_type="section">
                             <div class="elementor-container elementor-column-gap-default">
@@ -1955,7 +1868,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="elementor-element elementor-element-a468495 elementor-aspect-ratio-169 elementor-widget elementor-widget-video"
+                                        <!-- <div class="elementor-element elementor-element-a468495 elementor-aspect-ratio-169 elementor-widget elementor-widget-video"
                                             data-id="a468495" data-element_type="widget"
                                             data-settings='{"youtube_url":"https:\/\/youtu.be\/Gajnff67Rg8","autoplay":"yes","play_on_mobile":"yes","mute":"yes","video_type":"youtube","controls":"yes","aspect_ratio":"169"}'
                                             data-widget_type="video.default">
@@ -1965,14 +1878,14 @@
                                                     <div class="elementor-video"></div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div> -->
                                         <div class="elementor-element elementor-element-19588d7d elementor-widget elementor-widget-gallery"
                                             data-id="19588d7d" data-element_type="widget"
                                             data-settings='{"gallery_layout":"justified","ideal_row_height_mobile":{"unit":"px","size":250,"sizes":[]},"gap":{"unit":"px","size":5,"sizes":[]},"gap_mobile":{"unit":"px","size":5,"sizes":[]},"overlay_description":"caption","ideal_row_height":{"unit":"px","size":250,"sizes":[]},"ideal_row_height_tablet":{"unit":"px","size":150,"sizes":[]},"gap_tablet":{"unit":"px","size":10,"sizes":[]},"link_to":"file","content_hover_animation":"fade-in"}'
                                             data-widget_type="gallery.default">
                                             <div class="elementor-widget-container">
                                                 <div class="elementor-gallery__container">
-                                                    <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
+                                                    <!-- <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
                                                         href="https://res.cloudinary.com/dqv5emuao/image/upload/v1762938596/BG-PM-18-ezgif.com-jpg-to-webp-converter_zwzbai.webp"
                                                         data-elementor-open-lightbox="yes"
                                                         data-elementor-lightbox-slideshow="all-19588d7d"
@@ -1991,7 +1904,7 @@
                                                             data-thumbnail="https://res.cloudinary.com/dqv5emuao/image/upload/v1762938596/BG-PM-18-ezgif.com-jpg-to-webp-converter_zwzbai.webp"
                                                             data-width="1706" data-height="2560" alt=""></div>
                                                         <div class="elementor-gallery-item__content"></div>
-                                                    </a>
+                                                    </a> -->
                                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
                                                         href="https://res.cloudinary.com/dqv5emuao/image/upload/v1762973317/fce9c9ab1525fdde7904235015f54648bbb340e3-ezgif.com-jpg-to-webp-converter_tyonjg.webp"
                                                         data-elementor-open-lightbox="yes"
@@ -2073,22 +1986,22 @@
                                                         <div class="elementor-gallery-item__content"></div>
                                                     </a>
                                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                        href="https://tibra-invitation.id/wp-content/uploads/2024/01/BG-KT-10-scaled.webp"
+                                                        href="https://res.cloudinary.com/dqv5emuao/image/upload/v1763436608/photo_2025-11-1810.25.48-ezgif.com-png-to-webp-converter_ky2z02.webp"
                                                         data-elementor-open-lightbox="yes"
                                                         data-elementor-lightbox-slideshow="all-19588d7d"
                                                         e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTAzMjIsInVybCI6Imh0dHBzOlwvXC90aWJyYS1pbnZpdGF0aW9uLmlkXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wMVwvQkctS1QtMTAtc2NhbGVkLndlYnAiLCJzbGlkZXNob3ciOiJhbGwtMTk1ODhkN2QifQ%3D%3D">
                                                         <div class="e-gallery-image elementor-gallery-item__image"
-                                                            data-thumbnail="https://tibra-invitation.id/wp-content/uploads/2024/01/BG-KT-10-scaled.webp"
+                                                            data-thumbnail="https://res.cloudinary.com/dqv5emuao/image/upload/v1763436608/photo_2025-11-1810.25.48-ezgif.com-png-to-webp-converter_ky2z02.webp"
                                                             data-width="1706" data-height="2560" alt=""></div>
                                                         <div class="elementor-gallery-item__content"></div>
                                                     </a>
                                                     <a class="e-gallery-item elementor-gallery-item elementor-animated-content"
-                                                        href="https://tibra-invitation.id/wp-content/uploads/2024/01/BG-KT-6.webp"
+                                                        href="https://res.cloudinary.com/dqv5emuao/image/upload/v1763436605/photo_2025-11-1810.28.53-ezgif.com-png-to-webp-converter_z1yjct.webp"
                                                         data-elementor-open-lightbox="yes"
                                                         data-elementor-lightbox-slideshow="all-19588d7d"
                                                         e-action-hash="#elementor-action%3Aaction%3Dlightbox%26settings%3DeyJpZCI6NTAzMTgsInVybCI6Imh0dHBzOlwvXC90aWJyYS1pbnZpdGF0aW9uLmlkXC93cC1jb250ZW50XC91cGxvYWRzXC8yMDI0XC8wMVwvQkctS1QtNi53ZWJwIiwic2xpZGVzaG93IjoiYWxsLTE5NTg4ZDdkIn0%3D">
                                                         <div class="e-gallery-image elementor-gallery-item__image"
-                                                            data-thumbnail="https://tibra-invitation.id/wp-content/uploads/2024/01/BG-KT-6.webp"
+                                                            data-thumbnail="https://res.cloudinary.com/dqv5emuao/image/upload/v1763436605/photo_2025-11-1810.28.53-ezgif.com-png-to-webp-converter_z1yjct.webp"
                                                             data-width="2000" data-height="1333" alt=""></div>
                                                         <div class="elementor-gallery-item__content"></div>
                                                     </a>
@@ -2197,7 +2110,7 @@
                                                                 class="elementor-button elementor-size-sm">
                                                                 <span>
                                                                     <span class="elementor-button-icon"></span>
-                                                                    <span class="elementor-button-text">Submit</span>
+                                                                    <span class="elementor-button-text">Xác nhận tham dự</span>
                                                                 </span>
                                                             </button>
                                                         </div>
@@ -2308,7 +2221,7 @@
                                                                 class="elementor-button elementor-size-sm">
                                                                 <span>
                                                                     <span class="elementor-button-icon"></span>
-                                                                    <span class="elementor-button-text">Submit</span>
+                                                                    <span class="elementor-button-text">Xác nhận tham dự</span>
                                                                 </span>
                                                             </button>
                                                         </div>
@@ -2342,25 +2255,38 @@
                                             data-id="b4ce727" data-element_type="widget"
                                             data-settings='{"_animation":"zoomIn"}'
                                             data-widget_type="text-editor.default">
-                                            <div class="elementor-widget-container">
+                                            <div class="elementor-widget-container element-text">
                                                 <p>
-                                                    At the beginning of our acquaintance, we were in the
-                                                    same class when we were in college. He sent a
-                                                    private chat because he knew that we were from the
-                                                    same city. From there we got to know each other.
+                                                    Lần đầu tiên chúng mình gặp nhau là vào một ngày hè dưới sân trường,
+                                                    mình, chú rể đã cảm nắng Trâm từ nụ cười đầu tiên. Rồi chúng mình vô
+                                                    tình chung một nhóm làm sự kiện, sau thời gian dài tham gia hoạt
+                                                    động, chúng mình nhận ra cả hai có nhiều điểm chung và quyết định
+                                                    tiến đến với nhau.
                                                 </p>
                                                 <p>
                                                     <br />
-                                                    After getting closer when we met at the Chancellor
-                                                    &#8217;s Cup, we started communicating and meeting
-                                                    up frequently. Then he expressed his feelings and
-                                                    said he wanted to commit.<br />
-                                                    <br />Year after year passed and brought us closer,
-                                                    we became convinced that we were meant to be
-                                                    together. It wasn’t easy for us to get to this
-                                                    point, but it was all worth it.Happy marriages begin
-                                                    when we marry the ones we love, and they blossom
-                                                    when we love the ones we marry.
+                                                    Những ngày tháng sinh viên cho tới lúc có công việc đầu tiên, đã có
+                                                    nhiều khó khăn trải qua. Nhưng cả hai luôn động viên nhau, trao cho
+                                                    nhau sự tin tưởng, cùng nhau đồng hành và chúng mình thấy thật may
+                                                    mắn khi có người bạn đồng hành như vậy bên cạnh. Sẽ thật tuyệt vời
+                                                    nếu chúng ta có thể đi cùng nhau tiếp đến hết cuộc đời này.
+                                                </p>
+                                                <p>
+                                                    <br />
+                                                    Chúng mình đã có những ngày tháng hạnh phúc, cùng nhau đi khám phá
+                                                    những vùng đất mới, lần đầu đi máy bay, lần đầu đi nước ngoài,... và
+                                                    có rất nhiều cái lần đầu, thật đặc biệt khi những cột mốc quan trọng
+                                                    trong cuộc đời trưởng thành đều có nhau bên cạnh.
+                                                </p>
+                                                <p>
+                                                    <br />
+                                                    Chúng mình mong rằng cột mốc này, không chỉ có chúng mình và gia
+                                                    đình, mà còn có sự chứng kiến và chúc của những người bạn, và anh
+                                                    chị em thân thiết của chúng mình.
+                                                </p>
+                                                <p>
+                                                    <br />
+                                                    Hãy đến chung vui với chúng mình nhé!
                                                 </p>
                                             </div>
                                         </div>
@@ -2386,48 +2312,15 @@
                                                     data-id="16388a9c" data-element_type="column"
                                                     data-settings='{"background_background":"classic"}'>
                                                     <div class="elementor-widget-wrap elementor-element-populated">
-                                                        <div class="elementor-element elementor-element-30131804 elementor-widget elementor-widget-heading"
-                                                            data-id="30131804" data-element_type="widget"
-                                                            data-widget_type="heading.default">
-                                                            <div class="elementor-widget-container">
-                                                                <h2
-                                                                    class="elementor-heading-title elementor-size-default">
-                                                                    Sharing Memories
-                                                                </h2>
-                                                            </div>
-                                                        </div>
                                                         <div class="elementor-element elementor-element-29666646 elementor-widget elementor-widget-text-editor"
                                                             data-id="29666646" data-element_type="widget"
                                                             data-widget_type="text-editor.default">
                                                             <div class="elementor-widget-container">
-                                                                <p>
-                                                                    Please help us capture this special moment
-                                                                    by uploading your photos during the event so
-                                                                    that it becomes a beautiful memories for
-                                                                    both couples by clicking the button below.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div data-dce-background-color="#814A00"
-                                                            class="elementor-element elementor-element-fc18822 elementor-align-center elementor-widget elementor-widget-button"
-                                                            data-id="fc18822" data-element_type="widget"
-                                                            data-widget_type="button.default">
-                                                            <div class="elementor-widget-container">
-                                                                <div class="elementor-button-wrapper">
-                                                                    <a href="https://www.tibradigital.id/"
-                                                                        target="_blank"
-                                                                        class="elementor-button-link elementor-button elementor-size-sm elementor-animation-grow"
-                                                                        role="button">
-                                                                        <span class="elementor-button-content-wrapper">
-                                                                            <span
-                                                                                class="elementor-button-icon elementor-align-icon-left">
-                                                                                <i aria-hidden="true"
-                                                                                    class="far fa-images"></i>
-                                                                            </span>
-                                                                            <span class="elementor-button-text">Sharing
-                                                                                Memories</span>
-                                                                        </span>
-                                                                    </a>
+                                                                <div>
+                                                                    <img width="576" height="1024"
+                                                                        src="https://res.cloudinary.com/dqv5emuao/image/upload/v1763435624/Frame_4_2_idju4v.png"
+                                                                        class="size-large" alt="" loading="lazy"
+                                                                        sizes="(max-width: 576px) 100vw, 576px" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2453,47 +2346,15 @@
                                                     data-id="23fe32b0" data-element_type="column"
                                                     data-settings='{"background_background":"classic"}'>
                                                     <div class="elementor-widget-wrap elementor-element-populated">
-                                                        <div class="elementor-element elementor-element-17172358 elementor-widget elementor-widget-heading"
-                                                            data-id="17172358" data-element_type="widget"
-                                                            data-widget_type="heading.default">
-                                                            <div class="elementor-widget-container">
-                                                                <h2
-                                                                    class="elementor-heading-title elementor-size-default">
-                                                                    Qr Check in
-                                                                </h2>
-                                                            </div>
-                                                        </div>
                                                         <div class="elementor-element elementor-element-7567fefd elementor-widget elementor-widget-text-editor"
                                                             data-id="7567fefd" data-element_type="widget"
                                                             data-widget_type="text-editor.default">
                                                             <div class="elementor-widget-container">
-                                                                <p>
-                                                                    Show the QR code for checking in to the
-                                                                    location for the officer to scan it because
-                                                                    the data is integrated with the digital
-                                                                    guestbook system. Click the following button
-                                                                    to download the QR code.
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        <div data-dce-background-color="#814A00"
-                                                            class="elementor-element elementor-element-5c8524ae elementor-align-center qr-open elementor-widget elementor-widget-button"
-                                                            data-id="5c8524ae" data-element_type="widget"
-                                                            data-widget_type="button.default">
-                                                            <div class="elementor-widget-container">
-                                                                <div class="elementor-button-wrapper">
-                                                                    <a class="elementor-button elementor-size-sm elementor-animation-grow"
-                                                                        role="button">
-                                                                        <span class="elementor-button-content-wrapper">
-                                                                            <span
-                                                                                class="elementor-button-icon elementor-align-icon-left">
-                                                                                <i aria-hidden="true"
-                                                                                    class="fas fa-qrcode"></i>
-                                                                            </span>
-                                                                            <span class="elementor-button-text">Download
-                                                                                QR</span>
-                                                                        </span>
-                                                                    </a>
+                                                                <div>
+                                                                    <img width="576" height="1024"
+                                                                        src="https://res.cloudinary.com/dqv5emuao/image/upload/v1763435623/Frame_4_1_1_f7sfzd.png"
+                                                                        class="size-large" alt="" loading="lazy"
+                                                                        sizes="(max-width: 576px) 100vw, 576px" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2528,11 +2389,9 @@
                                         <div class="elementor-element elementor-element-674d764b elementor-widget elementor-widget-text-editor"
                                             data-id="674d764b" data-element_type="widget"
                                             data-widget_type="text-editor.default">
-                                            <div class="elementor-widget-container">
+                                            <div class="elementor-widget-container element-text">
                                                 <p>
-                                                    Leave us your beautiful wishes and most sincere
-                                                    prayers here as we are so excited to embark on this
-                                                    new journey together:
+                                                    Hãy gửi lời chúc và lời yêu thương tới cô dâu và chú rể nhé
                                                 </p>
                                             </div>
                                         </div>
@@ -2681,12 +2540,12 @@
                                                 <script>
                                                     document.getElementsByName(
                                                         "author"
-                                                    )[0].placeholder = "Name";
+                                                    )[0].placeholder = "Tên của bạn";
                                                     document.getElementsByName(
                                                         "comment"
-                                                    )[0].placeholder = "Your message";
+                                                    )[0].placeholder = "Gửi lời chúc tới cô dâu, chú rể";
                                                     document.getElementsByName("submit")[0].value =
-                                                        "Send Wishes";
+                                                        "Gửi lời chúc";
                                                 </script>
                                                 <script src="/js/adl-en-v1.0.min.js"></script>
                                             </div>
@@ -3003,690 +2862,6 @@ BG 3 : ${c5.toUpperCase()}`);
                             data-id="769d9005" data-element_type="widget" data-widget_type="html.default">
                             <div class="elementor-widget-container">
                                 <script src="/js/cavier-v1.3.3.min.js"></script>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section
-            class="elementor-section elementor-top-section elementor-element elementor-element-55e6f46c popups gift-popup elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-            data-id="55e6f46c" data-element_type="section" data-settings='{"background_background":"classic"}'>
-            <div class="elementor-container elementor-column-gap-default">
-                <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7a9c5251"
-                    data-id="7a9c5251" data-element_type="column">
-                    <div class="elementor-widget-wrap elementor-element-populated">
-                        <div data-dce-background-color="#FFFFFF00"
-                            class="elementor-element elementor-element-5f3c2dba elementor-align-right gift-close elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-button"
-                            data-id="5f3c2dba" data-element_type="widget" data-settings='{"_position":"absolute"}'
-                            data-widget_type="button.default">
-                            <div class="elementor-widget-container">
-                                <div class="elementor-button-wrapper">
-                                    <a class="elementor-button elementor-size-sm" role="button">
-                                        <span class="elementor-button-content-wrapper">
-                                            <span class="elementor-button-icon elementor-align-icon-left">
-                                                <i aria-hidden="true" class="far fa-times-circle"></i>
-                                            </span>
-                                            <span class="elementor-button-text"></span>
-                                        </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-640ee2a6 elementor-widget elementor-widget-heading"
-                            data-id="640ee2a6" data-element_type="widget" data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-default">
-                                    Wedding Gift
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-2d409c34 elementor-widget elementor-widget-heading"
-                            data-id="2d409c34" data-element_type="widget" data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-default">
-                                    Silakan kirim tanda kasih melalui nomor rekening, dompet
-                                    digital atau alamat pengiriman berikut :
-                                </h2>
-                            </div>
-                        </div>
-                        <section data-dce-background-overlay-color="#FFFFFF"
-                            class="elementor-section elementor-inner-section elementor-element elementor-element-282ff39 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                            data-id="282ff39" data-element_type="section"
-                            data-settings='{"background_background":"classic"}'>
-                            <div class="elementor-background-overlay"></div>
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div data-dce-background-color="#FFFFFF"
-                                    data-dce-background-image-url="https://tibra-invitation.id/wp-content/uploads/2022/06/Pngtree—simple-and-elegant-technology-gradient_1455303.png"
-                                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-5076d672"
-                                    data-id="5076d672" data-element_type="column"
-                                    data-settings='{"background_background":"classic"}'>
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-1b2ced70 elementor-widget elementor-widget-image"
-                                            data-id="1b2ced70" data-element_type="widget"
-                                            data-widget_type="image.default">
-                                            <div class="elementor-widget-container">
-                                                <img width="800" height="261"
-                                                    src="https://tibra-invitation.id/wp-content/uploads/2022/06/BNI-1024x334.png"
-                                                    class="attachment-large size-large" alt="" loading="lazy" srcset="
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/BNI-1024x334.png 1024w,
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/BNI-300x98.png    300w,
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/BNI-768x250.png   768w,
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/BNI.png          1280w
-                            " sizes="(max-width: 800px) 100vw, 800px" />
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-623a7514 elementor-widget elementor-widget-image"
-                                            data-id="623a7514" data-element_type="widget"
-                                            data-widget_type="image.default">
-                                            <div class="elementor-widget-container">
-                                                <img width="150" height="150"
-                                                    src="https://tibra-invitation.id/wp-content/uploads/2022/06/chip-atm.png"
-                                                    class="attachment-large size-large" alt="" loading="lazy" />
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-2013e405 elementor-widget elementor-widget-heading"
-                                            data-id="2013e405" data-element_type="widget"
-                                            data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">
-                                                    1234-5678-90
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-4c82b0b1 elementor-widget elementor-widget-heading"
-                                            data-id="4c82b0b1" data-element_type="widget"
-                                            data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">
-                                                    Nama pemilik rekening
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div data-dce-background-color="#00000087"
-                                            class="elementor-element elementor-element-5b230844 elementor-align-right elementor-widget elementor-widget-weddingpress-copy-text"
-                                            data-id="5b230844" data-element_type="widget"
-                                            data-widget_type="weddingpress-copy-text.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-image img"></div>
-                                                <div class="head-title"></div>
-                                                <div class="elementor-button-wrapper">
-                                                    <div class="copy-content spancontent" style="display: none">
-                                                        TIBRADIGITAL
-                                                    </div>
-                                                    <a style="cursor: pointer" onclick="copyText(this)"
-                                                        data-message="Berhasil disalin" class="elementor-button"
-                                                        role="button">
-                                                        <div class="elementor-button-content-wrapper">
-                                                            <span
-                                                                class="elementor-button-icon elementor-align-icon-left">
-                                                                <i aria-hidden="true" class="far fa-copy"></i>
-                                                            </span>
-                                                            <span class="elementor-button-text">Salin</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <style type="text/css">
-                                                    .spancontent {
-                                                        padding-bottom: 20px;
-                                                    }
-
-                                                    .copy-content {
-                                                        color: #6ec1e4;
-                                                        text-align: center;
-                                                    }
-
-                                                    .head-title {
-                                                        color: #6ec1e4;
-                                                        text-align: center;
-                                                    }
-                                                </style>
-                                                <script>
-                                                    function copyText(el) {
-                                                        var content = jQuery(el)
-                                                            .siblings("div.copy-content")
-                                                            .html();
-                                                        var temp = jQuery("<textarea>");
-                                                        jQuery("body").append(temp);
-                                                        temp
-                                                            .val(content.replace(/<br ?\/?>/g, "\n"))
-                                                            .select();
-                                                        document.execCommand("copy");
-                                                        temp.remove();
-                                                        var text = jQuery(el).html();
-                                                        jQuery(el).html(jQuery(el).data("message"));
-                                                        var counter = 0;
-                                                        var interval = setInterval(function () {
-                                                            counter++;
-                                                            if (counter == 1) {
-                                                                jQuery(el).html(text);
-                                                            }
-                                                        }, 500);
-                                                    }
-                                                </script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section data-dce-background-overlay-color="#FFFFFF"
-                            class="elementor-section elementor-inner-section elementor-element elementor-element-66723895 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                            data-id="66723895" data-element_type="section"
-                            data-settings='{"background_background":"classic"}'>
-                            <div class="elementor-background-overlay"></div>
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div data-dce-background-color="#FFFFFF"
-                                    data-dce-background-image-url="https://tibra-invitation.id/wp-content/uploads/2022/06/Pngtree—simple-and-elegant-technology-gradient_1455303.png"
-                                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-5cf2f07e"
-                                    data-id="5cf2f07e" data-element_type="column"
-                                    data-settings='{"background_background":"classic"}'>
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-68568ecd elementor-widget elementor-widget-image"
-                                            data-id="68568ecd" data-element_type="widget"
-                                            data-widget_type="image.default">
-                                            <div class="elementor-widget-container">
-                                                <img width="800" height="261"
-                                                    src="https://tibra-invitation.id/wp-content/uploads/2022/06/BCA-1024x334.png"
-                                                    class="attachment-large size-large" alt="" loading="lazy" srcset="
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/BCA-1024x334.png 1024w,
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/BCA-300x98.png    300w,
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/BCA-768x250.png   768w,
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/BCA.png          1280w
-                            " sizes="(max-width: 800px) 100vw, 800px" />
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-264d49c4 elementor-widget elementor-widget-image"
-                                            data-id="264d49c4" data-element_type="widget"
-                                            data-widget_type="image.default">
-                                            <div class="elementor-widget-container">
-                                                <img width="150" height="150"
-                                                    src="https://tibra-invitation.id/wp-content/uploads/2022/06/chip-atm.png"
-                                                    class="attachment-large size-large" alt="" loading="lazy" />
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-2dded4c3 elementor-widget elementor-widget-heading"
-                                            data-id="2dded4c3" data-element_type="widget"
-                                            data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">
-                                                    1234-5678-90
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-38ab5617 elementor-widget elementor-widget-heading"
-                                            data-id="38ab5617" data-element_type="widget"
-                                            data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">
-                                                    Nama pemilik rekening
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div data-dce-background-color="#00000087"
-                                            class="elementor-element elementor-element-5c61a22d elementor-align-right elementor-widget elementor-widget-weddingpress-copy-text"
-                                            data-id="5c61a22d" data-element_type="widget"
-                                            data-widget_type="weddingpress-copy-text.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-image img"></div>
-                                                <div class="head-title"></div>
-                                                <div class="elementor-button-wrapper">
-                                                    <div class="copy-content spancontent" style="display: none">
-                                                        TIBRADIGITAL
-                                                    </div>
-                                                    <a style="cursor: pointer" onclick="copyText(this)"
-                                                        data-message="Berhasil disalin" class="elementor-button"
-                                                        role="button">
-                                                        <div class="elementor-button-content-wrapper">
-                                                            <span
-                                                                class="elementor-button-icon elementor-align-icon-left">
-                                                                <i aria-hidden="true" class="far fa-copy"></i>
-                                                            </span>
-                                                            <span class="elementor-button-text">Salin</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <style type="text/css">
-                                                    .spancontent {
-                                                        padding-bottom: 20px;
-                                                    }
-
-                                                    .copy-content {
-                                                        color: #6ec1e4;
-                                                        text-align: center;
-                                                    }
-
-                                                    .head-title {
-                                                        color: #6ec1e4;
-                                                        text-align: center;
-                                                    }
-                                                </style>
-                                                <script>
-                                                    function copyText(el) {
-                                                        var content = jQuery(el)
-                                                            .siblings("div.copy-content")
-                                                            .html();
-                                                        var temp = jQuery("<textarea>");
-                                                        jQuery("body").append(temp);
-                                                        temp
-                                                            .val(content.replace(/<br ?\/?>/g, "\n"))
-                                                            .select();
-                                                        document.execCommand("copy");
-                                                        temp.remove();
-                                                        var text = jQuery(el).html();
-                                                        jQuery(el).html(jQuery(el).data("message"));
-                                                        var counter = 0;
-                                                        var interval = setInterval(function () {
-                                                            counter++;
-                                                            if (counter == 1) {
-                                                                jQuery(el).html(text);
-                                                            }
-                                                        }, 500);
-                                                    }
-                                                </script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section data-dce-background-overlay-color="#FFFFFF"
-                            class="elementor-section elementor-inner-section elementor-element elementor-element-50b0f077 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                            data-id="50b0f077" data-element_type="section">
-                            <div class="elementor-background-overlay"></div>
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div data-dce-background-color="#FFFFFF"
-                                    data-dce-background-image-url="https://tibra-invitation.id/wp-content/uploads/2022/06/Pngtree—simple-and-elegant-technology-gradient_1455303.png"
-                                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-4f62d96d"
-                                    data-id="4f62d96d" data-element_type="column"
-                                    data-settings='{"background_background":"classic"}'>
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-313e3b9c elementor-widget elementor-widget-image"
-                                            data-id="313e3b9c" data-element_type="widget"
-                                            data-widget_type="image.default">
-                                            <div class="elementor-widget-container">
-                                                <img width="800" height="261"
-                                                    src="https://tibra-invitation.id/wp-content/uploads/2022/06/SHOPEEPAY-1024x334.png"
-                                                    class="attachment-large size-large" alt="" loading="lazy" srcset="
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/SHOPEEPAY-1024x334.png 1024w,
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/SHOPEEPAY-300x98.png    300w,
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/SHOPEEPAY-768x250.png   768w,
-                              https://tibra-invitation.id/wp-content/uploads/2022/06/SHOPEEPAY.png          1280w
-                            " sizes="(max-width: 800px) 100vw, 800px" />
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-54a87a09 elementor-widget elementor-widget-image"
-                                            data-id="54a87a09" data-element_type="widget"
-                                            data-widget_type="image.default">
-                                            <div class="elementor-widget-container">
-                                                <img width="150" height="150"
-                                                    src="https://tibra-invitation.id/wp-content/uploads/2022/06/chip-atm.png"
-                                                    class="attachment-large size-large" alt="" loading="lazy" />
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-52d07624 elementor-widget elementor-widget-heading"
-                                            data-id="52d07624" data-element_type="widget"
-                                            data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">
-                                                    08123456789
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-51930710 elementor-widget elementor-widget-heading"
-                                            data-id="51930710" data-element_type="widget"
-                                            data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">
-                                                    Nama pemilik akun
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div data-dce-background-color="#00000087"
-                                            class="elementor-element elementor-element-39b6c3c4 elementor-align-right elementor-widget elementor-widget-weddingpress-copy-text"
-                                            data-id="39b6c3c4" data-element_type="widget"
-                                            data-widget_type="weddingpress-copy-text.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-image img"></div>
-                                                <div class="head-title"></div>
-                                                <div class="elementor-button-wrapper">
-                                                    <div class="copy-content spancontent" style="display: none">
-                                                        TIBRADIGITAL
-                                                    </div>
-                                                    <a style="cursor: pointer" onclick="copyText(this)"
-                                                        data-message="Berhasil disalin" class="elementor-button"
-                                                        role="button">
-                                                        <div class="elementor-button-content-wrapper">
-                                                            <span
-                                                                class="elementor-button-icon elementor-align-icon-left">
-                                                                <i aria-hidden="true" class="far fa-copy"></i>
-                                                            </span>
-                                                            <span class="elementor-button-text">Salin</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <style type="text/css">
-                                                    .spancontent {
-                                                        padding-bottom: 20px;
-                                                    }
-
-                                                    .copy-content {
-                                                        color: #6ec1e4;
-                                                        text-align: center;
-                                                    }
-
-                                                    .head-title {
-                                                        color: #6ec1e4;
-                                                        text-align: center;
-                                                    }
-                                                </style>
-                                                <script>
-                                                    function copyText(el) {
-                                                        var content = jQuery(el)
-                                                            .siblings("div.copy-content")
-                                                            .html();
-                                                        var temp = jQuery("<textarea>");
-                                                        jQuery("body").append(temp);
-                                                        temp
-                                                            .val(content.replace(/<br ?\/?>/g, "\n"))
-                                                            .select();
-                                                        document.execCommand("copy");
-                                                        temp.remove();
-                                                        var text = jQuery(el).html();
-                                                        jQuery(el).html(jQuery(el).data("message"));
-                                                        var counter = 0;
-                                                        var interval = setInterval(function () {
-                                                            counter++;
-                                                            if (counter == 1) {
-                                                                jQuery(el).html(text);
-                                                            }
-                                                        }, 500);
-                                                    }
-                                                </script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section data-dce-background-overlay-color="#FFFFFF"
-                            class="elementor-section elementor-inner-section elementor-element elementor-element-15958ba3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                            data-id="15958ba3" data-element_type="section"
-                            data-settings='{"background_background":"classic"}'>
-                            <div class="elementor-background-overlay"></div>
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div data-dce-background-color="#FFFFFF"
-                                    data-dce-background-image-url="https://tibra-invitation.id/wp-content/uploads/2022/06/Pngtree—simple-and-elegant-technology-gradient_1455303.png"
-                                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-156d1632"
-                                    data-id="156d1632" data-element_type="column"
-                                    data-settings='{"background_background":"classic"}'>
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-7f20ceaf elementor-widget elementor-widget-heading"
-                                            data-id="7f20ceaf" data-element_type="widget"
-                                            data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">
-                                                    Kirim Kado
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-7b7cb4ff elementor-widget elementor-widget-heading"
-                                            data-id="7b7cb4ff" data-element_type="widget"
-                                            data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">
-                                                    Nama penerima
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-363d8e2c elementor-widget elementor-widget-text-editor"
-                                            data-id="363d8e2c" data-element_type="widget"
-                                            data-widget_type="text-editor.default">
-                                            <div class="elementor-widget-container">
-                                                <p>
-                                                    Alamat : Blossom Residence No 20 Jl. Angsana,
-                                                    Pademangan Timur, Kec. Pademangan, Kota Jkt Utara,
-                                                    DKI Jakarta 14410
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div data-dce-background-color="#00000087"
-                                            class="elementor-element elementor-element-35a9f75a elementor-align-right elementor-widget elementor-widget-weddingpress-copy-text"
-                                            data-id="35a9f75a" data-element_type="widget"
-                                            data-widget_type="weddingpress-copy-text.default">
-                                            <div class="elementor-widget-container">
-                                                <div class="elementor-image img"></div>
-                                                <div class="head-title"></div>
-                                                <div class="elementor-button-wrapper">
-                                                    <div class="copy-content spancontent" style="display: none">
-                                                        TIBRADIGITAL
-                                                    </div>
-                                                    <a style="cursor: pointer" onclick="copyText(this)"
-                                                        data-message="Berhasil disalin" class="elementor-button"
-                                                        role="button">
-                                                        <div class="elementor-button-content-wrapper">
-                                                            <span
-                                                                class="elementor-button-icon elementor-align-icon-left">
-                                                                <i aria-hidden="true" class="far fa-copy"></i>
-                                                            </span>
-                                                            <span class="elementor-button-text">Salin</span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <style type="text/css">
-                                                    .spancontent {
-                                                        padding-bottom: 20px;
-                                                    }
-
-                                                    .copy-content {
-                                                        color: #6ec1e4;
-                                                        text-align: center;
-                                                    }
-
-                                                    .head-title {
-                                                        color: #6ec1e4;
-                                                        text-align: center;
-                                                    }
-                                                </style>
-                                                <script>
-                                                    function copyText(el) {
-                                                        var content = jQuery(el)
-                                                            .siblings("div.copy-content")
-                                                            .html();
-                                                        var temp = jQuery("<textarea>");
-                                                        jQuery("body").append(temp);
-                                                        temp
-                                                            .val(content.replace(/<br ?\/?>/g, "\n"))
-                                                            .select();
-                                                        document.execCommand("copy");
-                                                        temp.remove();
-                                                        var text = jQuery(el).html();
-                                                        jQuery(el).html(jQuery(el).data("message"));
-                                                        var counter = 0;
-                                                        var interval = setInterval(function () {
-                                                            counter++;
-                                                            if (counter == 1) {
-                                                                jQuery(el).html(text);
-                                                            }
-                                                        }, 500);
-                                                    }
-                                                </script>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <section data-dce-background-overlay-color="#FFFFFF"
-                            class="elementor-section elementor-inner-section elementor-element elementor-element-7528146f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                            data-id="7528146f" data-element_type="section">
-                            <div class="elementor-background-overlay"></div>
-                            <div class="elementor-container elementor-column-gap-default">
-                                <div data-dce-background-color="#E4E4E4"
-                                    class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-2c7c661d"
-                                    data-id="2c7c661d" data-element_type="column"
-                                    data-settings='{"background_background":"classic"}'>
-                                    <div class="elementor-widget-wrap elementor-element-populated">
-                                        <div class="elementor-element elementor-element-3bbc7484 elementor-widget elementor-widget-heading"
-                                            data-id="3bbc7484" data-element_type="widget"
-                                            data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">
-                                                    Konfirmasi Pengiriman
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-381a140e elementor-widget elementor-widget-heading"
-                                            data-id="381a140e" data-element_type="widget"
-                                            data-widget_type="heading.default">
-                                            <div class="elementor-widget-container">
-                                                <h2 class="elementor-heading-title elementor-size-default">
-                                                    Silakan melakukan konfirmasi pada kolom di bawah
-                                                    untuk mempermudah pendataan :
-                                                </h2>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-element elementor-element-3e2ab915 elementor-button-align-stretch elementor-widget elementor-widget-form"
-                                            data-id="3e2ab915" data-element_type="widget"
-                                            data-settings='{"step_next_label":"Next","step_previous_label":"Previous","button_width":"100","step_type":"number_text","step_icon_shape":"circle"}'
-                                            data-widget_type="form.default">
-                                            <div class="elementor-widget-container">
-                                                <form class="elementor-form" method="post" name="putra-putri-gift">
-                                                    <input type="hidden" name="post_id" value="50658" />
-                                                    <input type="hidden" name="form_id" value="3e2ab915" />
-                                                    <input type="hidden" name="referer_title" value="ELOISE THEME" />
-                                                    <input type="hidden" name="queried_id" value="50658" />
-                                                    <div class="elementor-form-fields-wrapper elementor-labels-above">
-                                                        <div
-                                                            class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-nama elementor-col-100 elementor-field-required">
-                                                            <label for="form-field-nama"
-                                                                class="elementor-field-label">Nama
-                                                            </label>
-                                                            <input size="1" type="text" name="form_fields[nama]"
-                                                                id="form-field-nama"
-                                                                class="elementor-field elementor-size-sm elementor-field-textual"
-                                                                placeholder="Nama Pengirim" required="required"
-                                                                aria-required="true" />
-                                                        </div>
-                                                        <div
-                                                            class="elementor-field-type-radio elementor-field-group elementor-column elementor-field-group-jenis_hadiah elementor-col-100 elementor-field-required">
-                                                            <label for="form-field-jenis_hadiah"
-                                                                class="elementor-field-label">Jenis Hadiah
-                                                            </label>
-                                                            <div class="elementor-field-subgroup">
-                                                                <span class="elementor-field-option">
-                                                                    <input type="radio" value="Transfer uang"
-                                                                        id="form-field-jenis_hadiah-0"
-                                                                        name="form_fields[jenis_hadiah]"
-                                                                        required="required" aria-required="true" />
-                                                                    <label for="form-field-jenis_hadiah-0">Transfer
-                                                                        uang</label>
-                                                                </span>
-                                                                <span class="elementor-field-option">
-                                                                    <input type="radio" value="Kirim kado"
-                                                                        id="form-field-jenis_hadiah-1"
-                                                                        name="form_fields[jenis_hadiah]"
-                                                                        required="required" aria-required="true" />
-                                                                    <label for="form-field-jenis_hadiah-1">Kirim
-                                                                        kado</label>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="elementor-field-type-radio elementor-field-group elementor-column elementor-field-group-tujuan elementor-col-100 elementor-field-required">
-                                                            <label for="form-field-tujuan"
-                                                                class="elementor-field-label">Tujuan Pengiriman
-                                                            </label>
-                                                            <div class="elementor-field-subgroup">
-                                                                <span class="elementor-field-option">
-                                                                    <input type="radio" value="BNI a/n Pemilik Rekening"
-                                                                        id="form-field-tujuan-0"
-                                                                        name="form_fields[tujuan]" required="required"
-                                                                        aria-required="true" />
-                                                                    <label for="form-field-tujuan-0">BNI a/n Pemilik
-                                                                        Rekening</label>
-                                                                </span>
-                                                                <span class="elementor-field-option">
-                                                                    <input type="radio" value="BCA a/n Pemilik Rekening"
-                                                                        id="form-field-tujuan-1"
-                                                                        name="form_fields[tujuan]" required="required"
-                                                                        aria-required="true" />
-                                                                    <label for="form-field-tujuan-1">BCA a/n Pemilik
-                                                                        Rekening</label>
-                                                                </span>
-                                                                <span class="elementor-field-option">
-                                                                    <input type="radio"
-                                                                        value="ShopeePay a/n Pemilik Akun"
-                                                                        id="form-field-tujuan-2"
-                                                                        name="form_fields[tujuan]" required="required"
-                                                                        aria-required="true" />
-                                                                    <label for="form-field-tujuan-2">ShopeePay a/n
-                                                                        Pemilik Akun</label>
-                                                                </span>
-                                                                <span class="elementor-field-option">
-                                                                    <input type="radio" value="Kado a/n Penerima"
-                                                                        id="form-field-tujuan-3"
-                                                                        name="form_fields[tujuan]" required="required"
-                                                                        aria-required="true" />
-                                                                    <label for="form-field-tujuan-3">Kado a/n
-                                                                        Penerima</label>
-                                                                </span>
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-nominal elementor-col-100">
-                                                            <label for="form-field-nominal"
-                                                                class="elementor-field-label">Nominal (jika transfer)
-                                                            </label>
-                                                            <input size="1" type="text" name="form_fields[nominal]"
-                                                                id="form-field-nominal"
-                                                                class="elementor-field elementor-size-sm elementor-field-textual"
-                                                                placeholder="Misal : 500.000" />
-                                                        </div>
-                                                        <div
-                                                            class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-                                                            <button type="submit"
-                                                                class="elementor-button elementor-size-sm">
-                                                                <span>
-                                                                    <span class="elementor-button-icon"></span>
-                                                                    <span
-                                                                        class="elementor-button-text">Konfirmasi</span>
-                                                                </span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <div class="elementor-element elementor-element-874972c elementor-widget elementor-widget-spacer"
-                            data-id="874972c" data-element_type="widget" data-widget_type="spacer.default">
-                            <div class="elementor-widget-container">
-                                <div class="elementor-spacer">
-                                    <div class="elementor-spacer-inner"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-76adf3f elementor-widget elementor-widget-html"
-                            data-id="76adf3f" data-element_type="widget" data-widget_type="html.default">
-                            <div class="elementor-widget-container">
-                                <script>
-                                    document.addEventListener("DOMContentLoaded", function () {
-                                        jQuery(function ($) {
-                                            $(".gift-open").click(function () {
-                                                $(".gift-popup").fadeIn("slow");
-                                                $("html, body").css("overflowY", "hidden");
-                                            });
-                                            $(".gift-close").click(function () {
-                                                $(".gift-popup").fadeOut("slow");
-                                                $("html, body").css("overflowY", "visible");
-                                            });
-                                        });
-                                    });
-                                </script>
                             </div>
                         </div>
                     </div>
@@ -5420,120 +4595,120 @@ BG 3 : ${c5.toUpperCase()}`);
         })();
     </script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Lấy tham số "to" từ URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const guestName = urlParams.get("to");
+        document.addEventListener("DOMContentLoaded", function () {
+            // Lấy tham số "to" từ URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const guestName = urlParams.get("to");
 
-        // Tìm phần tử hiển thị tên
-        const guestNameElement = document.querySelector(".guest-name");
+            // Tìm phần tử hiển thị tên
+            const guestNameElement = document.querySelector(".guest-name");
 
-        if (guestName && guestNameElement) {
-          // Giải mã URL (nếu có dấu cách, ký tự đặc biệt)
-          const decodedName = decodeURIComponent(guestName).trim();
-          guestNameElement.textContent = decodedName;
+            if (guestName && guestNameElement) {
+                // Giải mã URL (nếu có dấu cách, ký tự đặc biệt)
+                const decodedName = decodeURIComponent(guestName).trim();
+                guestNameElement.textContent = decodedName;
 
-          // Tùy chọn: Thêm dấu phẩy nếu cần
-          const dearElement = document.querySelector(
-            ".elementor-element-3f198d88 h2"
-          );
-          if (dearElement && !dearElement.textContent.includes(",")) {
-            dearElement.textContent = "Dear,";
-          }
-        } else if (guestNameElement) {
-          // Nếu không có tên → hiển thị mặc định
-          guestNameElement.textContent = "Quý khách";
-        }
-      });
+                // Tùy chọn: Thêm dấu phẩy nếu cần
+                const dearElement = document.querySelector(
+                    ".elementor-element-3f198d88 h2"
+                );
+                if (dearElement && !dearElement.textContent.includes(",")) {
+                    dearElement.textContent = "Dear,";
+                }
+            } else if (guestNameElement) {
+                // Nếu không có tên → hiển thị mặc định
+                guestNameElement.textContent = "Quý khách";
+            }
+        });
     </script>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // === 1. Xử lý tên khách từ URL ===
-        const urlParams = new URLSearchParams(window.location.search);
-        const guestName = urlParams.get("to");
-        const guestNameElement = document.querySelector(".guest-name");
-        if (guestName && guestNameElement) {
-          const decodedName = decodeURIComponent(guestName).trim();
-          guestNameElement.textContent = decodedName;
-          const dearElement = document.querySelector(
-            ".elementor-element-3f198d88 h2"
-          );
-          if (dearElement && !dearElement.textContent.includes(",")) {
-            dearElement.textContent = "Dear,";
-          }
-        } else if (guestNameElement) {
-          guestNameElement.textContent = "Quý khách";
-        }
-
-        // === 2. Các phần tử cần thao tác ===
-        const btnOpen = document.getElementById("btn_op");
-        const logo = document.getElementById("headerLogo");
-        const coverSection = document.getElementById("cvr");
-        const mainContent = document.getElementById("main-content");
-        const body = document.body;
-
-        // === 3. Kiểm tra đã mở chưa (dùng sessionStorage) ===
-        if (sessionStorage.getItem("invitationOpened")) {
-          // Đã mở rồi → bỏ qua cover, scroll xuống
-          if (coverSection) coverSection.style.display = "none";
-          body.classList.remove("no-scroll");
-          if (mainContent) {
-            mainContent.classList.add("unlocked");
-            mainContent.scrollIntoView({ behavior: "smooth" });
-          }
-          return;
-        }
-
-        // === 4. Khóa scroll ban đầu ===
-        body.classList.add("no-scroll");
-
-        // === 5. Xử lý khi click "Open Invitation" ===
-        if (btnOpen && mainContent) {
-          btnOpen.addEventListener("click", function (e) {
-            e.preventDefault();
-
-            // Bật cờ đã mở
-            sessionStorage.setItem("invitationOpened", "true");
-
-            // 1. Animation logo
-            if (logo) {
-              logo.classList.add("zoomIn");
-              setTimeout(() => {
-                logo.classList.remove("zoomIn");
-                logo.classList.add("disOut");
-              }, 3000);
+        document.addEventListener("DOMContentLoaded", function () {
+            // === 1. Xử lý tên khách từ URL ===
+            const urlParams = new URLSearchParams(window.location.search);
+            const guestName = urlParams.get("to");
+            const guestNameElement = document.querySelector(".guest-name");
+            if (guestName && guestNameElement) {
+                const decodedName = decodeURIComponent(guestName).trim();
+                guestNameElement.textContent = decodedName;
+                const dearElement = document.querySelector(
+                    ".elementor-element-3f198d88 h2"
+                );
+                if (dearElement && !dearElement.textContent.includes(",")) {
+                    dearElement.textContent = "Dear,";
+                }
+            } else if (guestNameElement) {
+                guestNameElement.textContent = "Quý khách";
             }
 
-            // 2. Mở khóa scroll + ẩn cover mượt mà
-            setTimeout(() => {
-              // Mở khóa scroll
-              body.classList.remove("no-scroll");
+            // === 2. Các phần tử cần thao tác ===
+            const btnOpen = document.getElementById("btn_op");
+            const logo = document.getElementById("headerLogo");
+            const coverSection = document.getElementById("cvr");
+            const mainContent = document.getElementById("main-content");
+            const body = document.body;
 
-              // Ẩn cover
-              if (coverSection) {
-                coverSection.style.transition =
-                  "opacity 0.8s ease, transform 0.8s ease";
-                coverSection.style.opacity = "0";
-                coverSection.style.transform = "translateY(-50px)";
-              }
-
-              // Hiển thị nội dung chính
-              mainContent.classList.add("unlocked");
-
-              // Scroll mượt xuống
-              mainContent.scrollIntoView({
-                behavior: "smooth",
-                block: "start",
-              });
-
-              // Xóa cover hoàn toàn sau khi mờ
-              setTimeout(() => {
+            // === 3. Kiểm tra đã mở chưa (dùng sessionStorage) ===
+            if (sessionStorage.getItem("invitationOpened")) {
+                // Đã mở rồi → bỏ qua cover, scroll xuống
                 if (coverSection) coverSection.style.display = "none";
-              }, 800);
-            }, 800);
-          });
-        }
-      });
+                body.classList.remove("no-scroll");
+                if (mainContent) {
+                    mainContent.classList.add("unlocked");
+                    mainContent.scrollIntoView({ behavior: "smooth" });
+                }
+                return;
+            }
+
+            // === 4. Khóa scroll ban đầu ===
+            body.classList.add("no-scroll");
+
+            // === 5. Xử lý khi click "Open Invitation" ===
+            if (btnOpen && mainContent) {
+                btnOpen.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    // Bật cờ đã mở
+                    sessionStorage.setItem("invitationOpened", "true");
+
+                    // 1. Animation logo
+                    if (logo) {
+                        logo.classList.add("zoomIn");
+                        setTimeout(() => {
+                            logo.classList.remove("zoomIn");
+                            logo.classList.add("disOut");
+                        }, 3000);
+                    }
+
+                    // 2. Mở khóa scroll + ẩn cover mượt mà
+                    setTimeout(() => {
+                        // Mở khóa scroll
+                        body.classList.remove("no-scroll");
+
+                        // Ẩn cover
+                        if (coverSection) {
+                            coverSection.style.transition =
+                                "opacity 0.8s ease, transform 0.8s ease";
+                            coverSection.style.opacity = "0";
+                            coverSection.style.transform = "translateY(-50px)";
+                        }
+
+                        // Hiển thị nội dung chính
+                        mainContent.classList.add("unlocked");
+
+                        // Scroll mượt xuống
+                        mainContent.scrollIntoView({
+                            behavior: "smooth",
+                            block: "start",
+                        });
+
+                        // Xóa cover hoàn toàn sau khi mờ
+                        setTimeout(() => {
+                            if (coverSection) coverSection.style.display = "none";
+                        }, 800);
+                    }, 800);
+                });
+            }
+        });
     </script>
     <div
         data-pafe-form-builder-tinymce-upload="https://tibra-invitation.id/wp-content/plugins/piotnet-addons-for-elementor-pro/inc/tinymce/tinymce-upload.php">
